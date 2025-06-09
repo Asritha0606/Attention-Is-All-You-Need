@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transformers Explained Like You're 5</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #4a90e2;
+    }
+    .section {
+      margin: 2rem 0;
+    }
+    .highlight {
+      background-color: #e0f7fa;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Transformers Explained Like You're 5!</h1>
+
+  <div class="section">
+    <h2>🔤 What's a Transformer?</h2>
+    <p>
+      Imagine you're trying to understand a story. You read one word at a time, right?
+      But some words are more important than others to understand the story.
+      A <strong>Transformer</strong> is like a smart robot that reads all the words at once,
+      figures out which ones are important, and understands the story really well!
+    </p>
+  </div>
+
+  <div class="section highlight">
+    <h2>✨ Attention = Focusing on Important Words</h2>
+    <p>
+      Think of attention like a flashlight. You shine it on words that matter most.
+      If you hear “The cat sat on the <strong>mat</strong>,” the Transformer knows "mat" is important.
+      <br><br>
+      It gives each word a score of how important it is. That’s called <strong>self-attention</strong>.
+    </p>
+    <img src="https://jalammar.github.io/images/t/transformer_self-attention_visualization.png" alt="Self Attention Visualization" />
+  </div>
+
+  <div class="section">
+    <h2>🧮 What's Happening Behind the Scenes?</h2>
+    <p>
+      The Transformer turns each word into numbers (called <strong>vectors</strong>).
+      Then it uses math to check how related each word is to every other word.
+      Like:
+    </p>
+    <ul>
+      <li>👀 How much should "the" pay attention to "cat"?</li>
+      <li>👀 How much should "cat" pay attention to "mat"?</li>
+    </ul>
+    <p>
+      This is done using things like <strong>dot products</strong>, <strong>softmax</strong>, and <strong>matrix multiplication</strong> — all fancy ways to say "compare and mix words smartly."
+    </p>
+  </div>
+
+  <div class="section highlight">
+    <h2>💡 Why Is It Cool?</h2>
+    <ul>
+      <li>Translates languages (like English to French).</li>
+      <li>Writes stories and poems.</li>
+      <li>Answers questions (like ChatGPT!).</li>
+      <li>Summarizes books and news.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🚀 What’s It Made Of?</h2>
+    <ul>
+      <li><strong>Encoder</strong>: Reads the input (like the sentence).</li>
+      <li><strong>Decoder</strong>: Writes the output (like a translation).</li>
+      <li>They both use layers of attention + feed-forward networks (like tiny math brains).</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📺 Watch It In Action</h2>
+    <p>
+      Want a fun video explanation? Watch this:
+      <a href="https://youtu.be/4Bdc55j80l8" target="_blank">The Illustrated Transformer (Video)</a>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>🎁 Summary</h2>
+    <p>
+      Transformers are like super-smart readers who look at the whole sentence,
+      pick out the most important words, and understand things really well.
+    </p>
+  </div>
+</body>
+</html>
