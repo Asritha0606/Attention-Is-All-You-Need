@@ -60,18 +60,31 @@ After training, the script includes an inference example that:
 
 For better results, increase the dataset size by adjusting:
 ```python
-data = data[['English words/sentences', 'French words/sentences']].dropna().head(10000)  # or more
-
+data = data[['English words/sentences', 'French words/sentences']].dropna().head(10000)  # or more 
+```
 and tune hyperparameters such as number of epochs, learning rate, and batch size.
 
 
-###Example Model Usage
-
-
+### Example Model Usage
+```python
 test_sentence = "hello"
 
-
 translated_text = model.translate(test_sentence)
+```
+### Notes
+
+- This is a minimal educational implementation. For production or large-scale training, consider using optimized libraries and pre-trained models.
+- The BERT tokenizer is used here for subword tokenization; other tokenizers may be chosen based on the data.
+- Training on larger datasets and for more epochs will significantly improve translation quality.
+
+### Credits
+
+- Original paper: Vaswani et al., “Attention Is All You Need” (2017)
+- Dataset: devicharith / language-translation-englishfrench on Kaggle
+- Libraries: PyTorch, HuggingFace Transformers, Kagglehub
+
+This repository and code are designed with clarity, modularity, and education in mind — to help developers, students, and researchers understand and implement Transformer models for sequence tasks.
+
+Thank you for exploring this project! Feel free to open issues or contribute improvements.
 
 
-print(f"Translated text: {translated_text}")
